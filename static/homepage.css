@@ -1,0 +1,116 @@
+/* Global layout */
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f6fb;
+    margin: 0;
+    padding: 20px;
+}
+
+/* ---------- TOPPSTATUS BOKSER ---------- */
+.top-container {
+    display: flex;
+    gap: 20px;
+}
+
+.status-box {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.status-box i {
+    font-size: 35px;
+    margin-right: 15px;
+}
+
+/* Grønn boks */
+.present {
+    border-left: 5px solid #4caf50;
+}
+
+/* Blå boks */
+.total {
+    border-left: 5px solid #2196f3;
+}
+
+/* ---------- HOVEDSEKSJON ---------- */
+.main-container {
+    margin-top: 25px;
+    display: flex;
+    gap: 20px;
+}
+
+/* Kort-design */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Input felt */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+}
+
+/* ---------- KNAPPER ---------- */
+.button-group {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    width: 50%;
+    padding: 12px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.arrival {
+    background: #4caf50;
+}
+
+.leaving {
+    background: #f44336;
+}
+
+/* ---------- TABELL ---------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Status-merker */
+.status-present {
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.status-left {
+    color: #f44336;
+    font-weight: bold;
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+    margin-top: 40px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}

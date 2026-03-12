@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <title>Visitor Registration</title>
+
+    <!-- Kobler til CSS-fil -->
+    <link rel="stylesheet" href="../static/homepage.css">
+
+    <!-- Ikoner fra Font Awesome (brukes for personer og dokument-ikoner) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Toppseksjon: to status-bokser -->
+    <div class="top-container">
+
+        <!-- Boks: hvor mange som er tilstede -->
+        <div class="status-box present">
+            <i class="fa-solid fa-user"></i>
+            <div>
+                <h3>Currently Present</h3>
+                <span id="presentCount">0</span> <!-- JS oppdaterer dette tallet -->
+            </div>
+        </div>
+
+        <!-- Boks: total besøk i dag -->
+        <div class="status-box total">
+            <i class="fa-solid fa-clipboard"></i>
+            <div>
+                <h3>Total Visits Today</h3>
+                <span id="totalCount">0</span> <!-- JS oppdaterer dette tallet -->
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Hovedinnhold: venstre registrering + høyre tabell -->
+    <div class="main-container">
+
+        <!-- VENSTRE: registreringsskjema -->
+        <div class="card">
+            <h2>Register Visitor</h2>
+
+            <label for="nameInput">Visitor Name</label>
+            <input id="nameInput" type="text" placeholder="Enter your name">
+
+            <div class="button-group">
+                <button class="btn arrival" id="arriveBtn">
+                    <i class="fa-solid fa-right-to-bracket"></i> Arriving
+                </button>
+
+                <button class="btn leaving" id="leaveBtn">
+                    <i class="fa-solid fa-door-open"></i> Leaving
+                </button>
+            </div>
+        </div>
+
+
+        <!-- HØYRE: tabellvisning -->
+        <div class="card">
+            <h2>Visitor Overview</h2>
+
+            <!-- Tabell som viser navn, tid og status -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Time</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tableBody"><!-- JS legger inn rader her --></tbody>
+
+            </table>
+        </div>
+
+    </div>
+
+
+
+    <!-- Bunntekst: forklaring -->
+    <div class="footer">
+        <h3>How to use:</h3>
+
+        <ul>
+            <li>Enter your name in the registration form</li>
+            <li>Click "Arriving" (green) when you enter the building</li>
+            <li>Click "Leaving" (red) when you exit the building</li>
+            <li>View all visitor activity in the overview table</li>
+        </ul>
+    </div>
+
+
+    <!-- Kobler til JavaScript -->
+    <script src="../static/homepage.js"></script>
+
+</body>
+</html>
