@@ -6,5 +6,5 @@ def get_conn():
         password="mypassword",
         host="10.2.3.143",
         port=3306,
-        database="visitors_overview"
+        database="Register"
     )           
